@@ -47,7 +47,7 @@ export default function Bridge() {
           {...fadeUp(0.12)}
         />
         <motion.p {...fadeUp(0.2)}>Assalamu'Alaikum Wr. Wb.</motion.p>
-        <motion.p {...fadeUp(0.28)}>
+        <motion.p {...fadeUp(0.28)} className="text-center">
           Tanpa mengurangi rasa hormat, kami mengundang Bapak/Ibu/Saudara/i
           serta kerabat sekalian untuk menghadiri dalam acara pernikahan kami:
         </motion.p>
