@@ -3,7 +3,7 @@ import { useEffect, useLayoutEffect, useState } from "react";
 import { useSearchParams } from "react-router";
 
 export default function Intro() {
-  const namaTamu = useSearchParams()[0].get("nama-tamu") || "Tamu Undangan";
+  const namaTamu = useSearchParams()[0].get("nama-tamu");
   const [introShow, setIntroShow] = useState<boolean>(true);
   const [introMounted, setIntroMounted] = useState<boolean>(true);
 

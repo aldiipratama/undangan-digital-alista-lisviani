@@ -64,7 +64,7 @@ export default function Ending() {
               <ul className="list-['-'] space-y-2">
                 <li>Keluarga Besar Bapak H. Oda Hidayat (Alm)</li>
                 <li>Keluarga Besar Bapak H. Anen Zulkarnaen (Alm)</li>
-                <li>Keluarga Besar Bapak H. Marwan Juandi (Alm)</li>
+                <li>Keluarga Besar Bapak H. Marwan Juandi</li>
               </ul>
             </motion.div>
             <motion.div className="flex flex-col items-center font-medium text-sm">
