@@ -9,6 +9,7 @@ import LoveStory from "./love-story";
 import OurGallery from "./our-gallery";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   useLayoutEffect(() => {
@@ -25,6 +26,7 @@ function App() {
       <OurGallery />
       <Gift />
       <Ending />
+      <Analytics />
     </main>
   );
 }
