@@ -5,7 +5,7 @@ export default function Dating() {
     console.log("clicked");
     // Create iCalendar format event
     const eventTitle = "Pernikahan Alista & Rijal";
-    const eventStart = "20260503T090000";
+    const eventStart = "20260503T080000";
     const eventEnd = "20260503T140000";
     const eventLocation = "Kediaman mempelai wanita";
     const eventDescription = "Undangan Pernikahan Alista Lisviani & Itep Rijal";
