@@ -135,7 +135,7 @@ export default function Countdown() {
           href="https://www.google.com/maps?q=-7.104134559631348,107.45669555664062&z=17&hl=en"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-cyan-700 hover:bg-cyan-900 text-white font-bold py-2 px-4 rounded-md mt-4"
+          className="bg-[#800000] hover:bg-[#600000] text-white font-bold py-2 px-4 rounded-md mt-4"
           {...fadeUp(0.72)}
         >
           Lihat Lokasi

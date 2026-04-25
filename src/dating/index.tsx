@@ -2,6 +2,7 @@ import { motion } from "motion/react";
 
 export default function Dating() {
   const handleSaveToCalendar = () => {
+    console.log("clicked");
     // Create iCalendar format event
     const eventTitle = "Pernikahan Alista & Rijal";
     const eventStart = "20260503T090000";

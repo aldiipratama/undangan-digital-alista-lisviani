@@ -5,6 +5,7 @@ import { useSearchParams } from "react-router";
 export default function Intro() {
   const namaTamu = useSearchParams()[0].get("nama-tamu") || "Tamu Undangan";
   const [introShow, setIntroShow] = useState<boolean>(true);
+  const [introMounted, setIntroMounted] = useState<boolean>(true);
 
   useLayoutEffect(() => {
     window.scrollTo(0, 0);
@@ -48,12 +49,22 @@ export default function Intro() {
     playAudio();
   };
 
+  if (!introMounted) {
+    return null;
+  }
+
   return (
     <motion.div
       className="flex flex-col items-center gap-4 h-screen bg-[url('/images/bingkai.png')] bg-[#f2eadf] bg-center bg-contain bg-no-repeat place-content-center overflow-hidden absolute inset-0 z-999"
       initial={{ opacity: 1 }}
       animate={{ opacity: introShow ? 1 : 0, translateY: introShow ? 0 : -100 }}
+      style={{ pointerEvents: introShow ? "auto" : "none" }}
       transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
+      onAnimationComplete={() => {
+        if (!introShow) {
+          setIntroMounted(false);
+        }
+      }}
     >
       <motion.img
         src="/images/img25.jpeg"
