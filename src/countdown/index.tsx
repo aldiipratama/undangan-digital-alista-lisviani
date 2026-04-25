@@ -3,7 +3,7 @@ import { useTimer } from "react-timer-hook";
 
 export default function Countdown() {
   const { days, hours, minutes, seconds } = useTimer({
-    expiryTimestamp: new Date("2026-05-03T09:00:00"),
+    expiryTimestamp: new Date("2026-05-03T08:00:00"),
   });
 
   const fadeUp = (delay = 0) => ({
