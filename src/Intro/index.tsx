@@ -34,6 +34,20 @@ export default function Intro() {
     },
   };
 
+  const playAudio = () => {
+    const audio = new Audio("/songs/Fabio Asher - Aku Memilihmu.mp3");
+    audio.play();
+    audio.addEventListener("ended", () => {
+      audio.currentTime = 0;
+      audio.play();
+    });
+  };
+
+  const handleClick = () => {
+    setIntroShow(false);
+    playAudio();
+  };
+
   return (
     <motion.div
       className="flex flex-col items-center gap-4 h-screen bg-[url('/images/bingkai.png')] bg-[#f2eadf] bg-center bg-contain bg-no-repeat place-content-center overflow-hidden absolute inset-0 z-999"
@@ -42,7 +56,7 @@ export default function Intro() {
       transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
     >
       <motion.img
-        src="/images/img21.jpeg"
+        src="/images/img25.jpeg"
         alt="Intro"
         className="w-full max-w-50 rounded-lg shadow-lg border-white border-4"
         variants={item}
@@ -57,7 +71,7 @@ export default function Intro() {
         whileInView="show"
         viewport={{ once: false, amount: 0.6 }}
       >
-        Alista & Rijal
+        Alista & Itep
       </motion.p>
       <motion.p
         className="text-xs font-bold"
@@ -79,7 +93,7 @@ export default function Intro() {
       </motion.p>
       <motion.button
         className="bg-[#800000] hover:bg-[#600000] text-white font-bold py-2 px-4 rounded-md"
-        onClick={() => setIntroShow(false)}
+        onClick={handleClick}
         variants={item}
         initial="hidden"
         whileInView="show"

@@ -101,7 +101,7 @@ export default function Countdown() {
             Akad Nikah
           </motion.span>
           <motion.span {...fadeUp(0.51)}>Minggu, 03 Mei 2026</motion.span>
-          <motion.span {...fadeUp(0.52)}>Pukul 09.00 WIB</motion.span>
+          <motion.span {...fadeUp(0.52)}>Pukul 08.00 WIB</motion.span>
           <motion.span {...fadeUp(0.53)}>
             Tempat: Kediaman mempelai wanita
           </motion.span>
@@ -117,7 +117,7 @@ export default function Countdown() {
             Resepsi
           </motion.span>
           <motion.span {...fadeUp(0.59)}>Minggu, 03 Mei 2026</motion.span>
-          <motion.span {...fadeUp(0.6)}>Pukul 09.00 WIB</motion.span>
+          <motion.span {...fadeUp(0.6)}>Pukul 08.00 WIB</motion.span>
           <motion.span {...fadeUp(0.61)}>
             Tempat: Kediaman mempelai wanita
           </motion.span>

@@ -39,8 +39,51 @@ export default function Ending() {
           className="font-lobster font-medium text-lg"
           {...fadeUp(0.24)}
         >
-          Alista & Rijal
+          Alista & Itep
         </motion.p>
+
+        <motion.div className="flex flex-col items-center justify-center">
+          <motion.div className="grid grid-cols-2 gap-2" {...fadeUp(0.4)}>
+            <motion.div className="flex flex-col items-center font-medium text-sm">
+              <motion.p>Kel. Bapak Ayi Sugandi</motion.p>
+              <motion.p>Ibu Lilis Nursoda</motion.p>
+            </motion.div>
+            <motion.div className="flex flex-col items-center font-medium text-sm">
+              <motion.p>Kel. Bapak Ido</motion.p>
+              <motion.p>Ibu Lilis Hayati</motion.p>
+            </motion.div>
+          </motion.div>
+        </motion.div>
+
+        <motion.div className="flex flex-col items-center justify-center">
+          <motion.p className="font-medium text-sm" {...fadeUp(0.48)}>
+            Turut mengundang:
+          </motion.p>
+          <motion.div className="grid grid-cols-2 gap-2" {...fadeUp(0.56)}>
+            <motion.div className="flex flex-col items-center font-medium text-sm">
+              <ul className="list-['-'] space-y-2">
+                <li>Keluarga Besar Bapak H. Oda Hidayat (Alm)</li>
+                <li>Keluarga Besar Bapak H. Anen Zulkarnaen (Alm)</li>
+                <li>Keluarga Besar Bapak H. Marwan Juandi (Alm)</li>
+              </ul>
+            </motion.div>
+            <motion.div className="flex flex-col items-center font-medium text-sm">
+              <ul className="list-['-'] space-y-2">
+                <li>
+                  Keluarga Besar Bapak H. Yusuf Darmaji / Kepala Desa Ciwidey
+                </li>
+                <li>
+                  Keluarga Besar Bapak Agus Margono, S. IP / Kepala Desa
+                  Indragiri
+                </li>
+                <li>
+                  Keluarga Besar Bapak AnAn Romdon Kurniawan / Kepala Desa
+                  Panundaan
+                </li>
+              </ul>
+            </motion.div>
+          </motion.div>
+        </motion.div>
       </motion.div>
     </motion.section>
   );

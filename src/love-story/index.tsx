@@ -45,7 +45,7 @@ export default function LoveStory() {
 
       <motion.div className="flex flex-col gap-2 items-center justify-center mt-20">
         <motion.div
-          className="w-80 h-50 bg-[url('/images/img31.jpeg')] bg-cover bg-center border-4 shadow-lg border-white rounded-md"
+          className="w-80 h-50 bg-[url('/images/img34.jpeg')] bg-cover bg-position-[center_top_15rem] border-4 shadow-lg border-white rounded-md"
           {...fadeUp(0.2)}
         />
         <motion.span {...fadeUp(0.28)}>Resepsi Pernikahan</motion.span>

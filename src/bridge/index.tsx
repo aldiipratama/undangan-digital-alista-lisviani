@@ -52,7 +52,7 @@ export default function Bridge() {
           serta kerabat sekalian untuk menghadiri dalam acara pernikahan kami:
         </motion.p>
         <motion.img
-          src="/images/img5-transparent.png"
+          src="/images/img5.jpeg"
           className="w-40 border-4 border-[#eae0d2] bg-[#800000] rounded-md mt-4"
           {...fadeUp(0.36)}
         />
@@ -69,7 +69,7 @@ export default function Bridge() {
           &
         </motion.span>
         <motion.img
-          src="/images/img1-transparent.png"
+          src="/images/img1.jpeg"
           className="w-40 border-4 border-[#eae0d2] bg-[#800000] rounded-md mt-4"
           {...fadeUp(0.68)}
         />

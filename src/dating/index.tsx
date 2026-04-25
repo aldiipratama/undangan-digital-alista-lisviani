@@ -56,9 +56,15 @@ export default function Dating() {
 
   return (
     <motion.section className="h-screen w-full relative">
-      <motion.div className="bg-linear-to-b from-[#c8c3bc] to-transparent">
+      <motion.div className="bg-linear-to-b from-[#c8c3bc] to-transparent grid grid-cols-2 items-center">
         <motion.img
-          src="/images/img6-transparent.png"
+          src="/images/img32-transparent.png"
+          alt="Dating"
+          className="w-full h-80 object-cover mask-b-from-70% mask-b-to-100%"
+          {...fadeUp()}
+        />
+        <motion.img
+          src="/images/img33-transparent.png"
           alt="Dating"
           className="w-full h-80 object-cover mask-b-from-70% mask-b-to-100%"
           {...fadeUp()}
@@ -75,13 +81,13 @@ export default function Dating() {
           className="text-center w-full font-lobster text-2xl"
           {...fadeUp(0.2)}
         >
-          Alista & Rijal
+          Alista & Itep
         </motion.p>
         <motion.p
           className="text-center w-full text-sm font-medium"
           {...fadeUp(0.28)}
         >
-          Minggu, 03 Mei 2026 | 09.00 WIB
+          Minggu, 03 Mei 2026 | 08.00 WIB
         </motion.p>
         <motion.button
           className="bg-[#800000] hover:bg-[#600000] text-white font-bold py-2 px-4 rounded-full mt-4"
